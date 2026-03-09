@@ -60,10 +60,11 @@ Azure SQL:
 ## Print's da Aplicação: Docker Azure Container App
 
 Tela inicial:
-![Uploading image.png…]()
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/6f4d1e2f-0e9a-4e9a-9e65-1df977df52a7" />
 
 Produtos listados:
-![Uploading image.png…]()
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/c13a0c72-a8b7-4c26-94af-234f3aed2454" />
 
 Azure Resource Group:
-![Uploading image.png…]()
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/d3c5306f-f18a-42a7-b472-92779c527d66" />
+
