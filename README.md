@@ -4,6 +4,8 @@
 
 Projeto desenvolvido durante o curso da DIO com foco na Microsoft Application Platform, simula um Ecommerce utilizando serviços em nuvem da Microsoft Azure.
 
+A aplicação permite cadastrar produtos, armazenar imagens na nuvem e registrar as informações em um banco de dados cloud, demonstrando a integração entre diferentes serviços da plataforma Azure.
+
 ## Tecnologias utilizadas:
 
 - Python
@@ -41,7 +43,7 @@ Durante o processo do desenvolvimento deste projeto, foram executados conceitos 
 - Integração entre serviços cloud.
 - Estruturação de aplicações web com Streamlit.
 
-## Print's da Aplicação:
+## Print's da Aplicação: Armazenando Dados
 
 Tela inicial:
 ![alt text](image-1.png)
@@ -54,3 +56,14 @@ Produto sendo excluído:
 
 Azure SQL:
 ![alt text](image-4.png)
+
+## Print's da Aplicação: Docker Azure Container App
+
+Tela inicial:
+![Uploading image.png…]()
+
+Produtos listados:
+![Uploading image.png…]()
+
+Azure Resource Group:
+![Uploading image.png…]()
