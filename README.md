@@ -6,6 +6,8 @@ Projeto desenvolvido durante o curso da DIO com foco na Microsoft Application Pl
 
 A aplicação permite cadastrar produtos, armazenar imagens na nuvem e registrar as informações em um banco de dados cloud, demonstrando a integração entre diferentes serviços da plataforma Azure.
 
+Além da aplicação principal, foi criada uma camada de gerenciamento de  APIs utilizando o Azure API Management. A API foi protegida utilizando autenticação baseada em JWT (Json Web Token), garantindo que apenas clientes autenticados consigam acessar os endpoints.
+
 ## Tecnologias utilizadas:
 
 - Python
@@ -14,6 +16,10 @@ A aplicação permite cadastrar produtos, armazenar imagens na nuvem e registrar
 - Azure Blob Storage
 - PyODBC
 - Dotenv
+- Azure API Management
+- JWT Authentication
+- Policies no APIM
+- Teste via Postman
 
 ## Funcionamento:
 
@@ -33,6 +39,11 @@ A aplicação permite cadastrar produtos, armazenar imagens na nuvem e registrar
 5. Execute:
     - streamlit run main.py
 
+## Fluxo de autenticação da API
+1. O cliente solicita um token JWT.
+2. O token é enviado no header 'Authorization'.
+3. O Azure API Management valida o token utilizando uma policy JWT.
+4. Caso o token seja válido, a requisição é encaminhada para a aplicação.
 
 ## Aprendizados e Insights:
 
@@ -67,3 +78,20 @@ Produtos listados:
 
 Azure Resource Group:
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/d3c5306f-f18a-42a7-b472-92779c527d66" />
+
+## Print's da Aplicação: APIs Management com Azure e JWT
+
+Tela inicial:
+<img width="1365" height="767" alt="Azure API" src="https://github.com/user-attachments/assets/45229ae7-0761-46ab-b68f-cf1b4247c75c" />
+
+Policy JWT:
+<img width="1365" height="767" alt="Policy JWT" src="https://github.com/user-attachments/assets/476b9331-68ca-4d5d-9702-af72d161a491" />
+
+API Overview:
+<img width="1362" height="767" alt="Azure API Overview" src="https://github.com/user-attachments/assets/9ae0e3bf-fc72-4d07-8608-c6d604efe9ad" />
+
+Curl Token:
+<img width="1365" height="767" alt="Curl Token" src="https://github.com/user-attachments/assets/2c62a5f4-0e8c-4f45-849b-365c4c7696ff" />
+
+Curl API:
+<img width="1365" height="767" alt="Curl API" src="https://github.com/user-attachments/assets/c0050391-a468-42f4-a106-c6af8b6ff835" />
