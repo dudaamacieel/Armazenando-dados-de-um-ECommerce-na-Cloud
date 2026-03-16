@@ -128,7 +128,7 @@ Tela inicial:
 <img width="1365" height="767" alt="Captura de tela 2026-03-16 161513" src="https://github.com/user-attachments/assets/26370b8a-6b1e-4243-941d-c76bba30687d" />
 
 Validando o código de barras:
-<img width="1365" height="767" alt="Captura de tela 2026-03-16 161557" src="https://github.com/user-attachments/assets/4af51830-d9ce-490f-9550-289fcb6fd5d5" />
+<img width="1361" height="767" alt="Captura de tela 2026-03-16 161615" src="https://github.com/user-attachments/assets/87900a9f-89b4-4341-93d6-d6388ec1815b" />
 
 Service Bus Queue:
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/1ae5c2b5-7e75-4533-8875-d90eecb2d57b" />
