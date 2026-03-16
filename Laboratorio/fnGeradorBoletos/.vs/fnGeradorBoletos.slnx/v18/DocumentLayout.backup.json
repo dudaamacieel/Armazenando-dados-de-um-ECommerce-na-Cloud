@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ohana\\OneDrive\\Desktop\\Eduarda\\PROJETOS\\CURSOS DIO\\Laboratorio\\fnGeradorBoletos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54E1841A-CB30-A6F7-5ADA-4F0935984281}|fnGeradorBoletos\\fnGeradorBoletos.csproj|c:\\users\\ohana\\onedrive\\desktop\\eduarda\\projetos\\cursos dio\\laboratorio\\fngeradorboletos\\fngeradorboletos\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E1841A-CB30-A6F7-5ADA-4F0935984281}|fnGeradorBoletos\\fnGeradorBoletos.csproj|solutionrelative:fngeradorboletos\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A669075B-0D7C-DC41-F7A3-A4EE498B3F5A}|fnValidaBoleto\\fnValidaBoleto.csproj|c:\\users\\ohana\\onedrive\\desktop\\eduarda\\projetos\\cursos dio\\laboratorio\\fngeradorboletos\\fnvalidaboleto\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A669075B-0D7C-DC41-F7A3-A4EE498B3F5A}|fnValidaBoleto\\fnValidaBoleto.csproj|solutionrelative:fnvalidaboleto\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A669075B-0D7C-DC41-F7A3-A4EE498B3F5A}|fnValidaBoleto\\fnValidaBoleto.csproj|c:\\users\\ohana\\onedrive\\desktop\\eduarda\\projetos\\cursos dio\\laboratorio\\fngeradorboletos\\fnvalidaboleto\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A669075B-0D7C-DC41-F7A3-A4EE498B3F5A}|fnValidaBoleto\\fnValidaBoleto.csproj|solutionrelative:fnvalidaboleto\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Function1.cs",
+              "DocumentMoniker": "C:\\Users\\Ohana\\OneDrive\\Desktop\\Eduarda\\PROJETOS\\CURSOS DIO\\Laboratorio\\fnGeradorBoletos\\fnGeradorBoletos\\Function1.cs",
+              "RelativeDocumentMoniker": "fnGeradorBoletos\\Function1.cs",
+              "ToolTip": "C:\\Users\\Ohana\\OneDrive\\Desktop\\Eduarda\\PROJETOS\\CURSOS DIO\\Laboratorio\\fnGeradorBoletos\\fnGeradorBoletos\\Function1.cs",
+              "RelativeToolTip": "fnGeradorBoletos\\Function1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAF0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T17:58:06.103Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Function1.cs",
+              "DocumentMoniker": "C:\\Users\\Ohana\\OneDrive\\Desktop\\Eduarda\\PROJETOS\\CURSOS DIO\\Laboratorio\\fnGeradorBoletos\\fnValidaBoleto\\Function1.cs",
+              "RelativeDocumentMoniker": "fnValidaBoleto\\Function1.cs",
+              "ToolTip": "C:\\Users\\Ohana\\OneDrive\\Desktop\\Eduarda\\PROJETOS\\CURSOS DIO\\Laboratorio\\fnGeradorBoletos\\fnValidaBoleto\\Function1.cs",
+              "RelativeToolTip": "fnValidaBoleto\\Function1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T00:14:30.409Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "local.settings.json",
+              "DocumentMoniker": "C:\\Users\\Ohana\\OneDrive\\Desktop\\Eduarda\\PROJETOS\\CURSOS DIO\\Laboratorio\\fnGeradorBoletos\\fnValidaBoleto\\local.settings.json",
+              "RelativeDocumentMoniker": "fnValidaBoleto\\local.settings.json",
+              "ToolTip": "C:\\Users\\Ohana\\OneDrive\\Desktop\\Eduarda\\PROJETOS\\CURSOS DIO\\Laboratorio\\fnGeradorBoletos\\fnValidaBoleto\\local.settings.json",
+              "RelativeToolTip": "fnValidaBoleto\\local.settings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-16T18:21:30.285Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
