@@ -10,6 +10,8 @@ Além da aplicação principal, foi criada uma camada de gerenciamento de  APIs 
 
 Além disso, foi desenvolvido um serviço autenticador de boletos que permite gerar tokens únicos e validar códigos de barras de boletos, integrando com Azure Service Bus para envio e processamento assíncrono das validações.
 
+Foi desenvolvido tambem um projeto criado com apoio do Copilot no VS Code, com foco em praticar lógica de programação, animações e conceitos básicos de física aplicados a jogos. 
+
 ## Tecnologias utilizadas:
 
 - Python
@@ -23,6 +25,8 @@ Além disso, foi desenvolvido um serviço autenticador de boletos que permite ge
 - Policies no APIM
 - Azure Functions (.NET 6)
 - Azure Service Bus
+- JavaScript
+- HTML5 Canvas
 - Postman
 
 ## Funcionamento:
@@ -43,6 +47,11 @@ Além disso, foi desenvolvido um serviço autenticador de boletos que permite ge
 4. Instale as dependências.
 5. Configure o arquivo .env com suas credenciais e endpoints.
 6. Execute a aplicação.
+
+## Como executar o jogo:
+
+1. Acesse a pasta do projeto do jogo.
+2. Abra o arquivo index.html no navegador.
 
 ## Fluxo de autenticação da API
 
