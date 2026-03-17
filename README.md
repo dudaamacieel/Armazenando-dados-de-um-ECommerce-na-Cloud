@@ -143,4 +143,5 @@ Service Bus Queue:
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/1ae5c2b5-7e75-4533-8875-d90eecb2d57b" />
 
 Demonstração do Jogo:
+
 ![Joguinho-ezgif com-optimize](https://github.com/user-attachments/assets/7be50ede-e06d-4a45-bb3e-d1175374468b)
