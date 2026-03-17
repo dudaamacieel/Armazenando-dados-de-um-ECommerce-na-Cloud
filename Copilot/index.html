@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario - Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <div class="score">Pontuação: <span id="score">0</span></div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="game-over" id="gameOver" style="display: none;">
+            <h1>Game Over!</h1>
+            <p>Sua Pontuação: <span id="finalScore">0</span></p>
+            <button onclick="location.reload()">Jogar Novamente</button>
+        </div>
+
+        <div class="instructions">
+            <p>Clique ou Pressione ESPAÇO para pular</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
