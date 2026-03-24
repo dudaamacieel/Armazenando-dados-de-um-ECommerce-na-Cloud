@@ -4,3 +4,4 @@ bin/
 obj/
 .env
 *.log
+local.settings.json
