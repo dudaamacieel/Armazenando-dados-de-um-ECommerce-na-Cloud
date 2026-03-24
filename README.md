@@ -6,11 +6,13 @@ Projeto desenvolvido durante o curso da DIO com foco na Microsoft Application Pl
 
 A aplicação permite cadastrar produtos, armazenar imagens na nuvem e registrar as informações em um banco de dados cloud, demonstrando a integração entre diferentes serviços da plataforma Azure.
 
-Além da aplicação principal, foi criada uma camada de gerenciamento de  APIs utilizando o Azure API Management. A API foi protegida utilizando autenticação baseada em JWT (Json Web Token), garantindo que apenas clientes autenticados consigam acessar os endpoints.
+Além da aplicação principal, foi criada uma camada de gerenciamento de APIs utilizando o Azure API Management. A API foi protegida utilizando autenticação baseada em JWT (Json Web Token), garantindo que apenas clientes autenticados consigam acessar os endpoints.
 
 Além disso, foi desenvolvido um serviço autenticador de boletos que permite gerar tokens únicos e validar códigos de barras de boletos, integrando com Azure Service Bus para envio e processamento assíncrono das validações.
 
 Foi desenvolvido tambem um projeto criado com apoio do Copilot no VS Code, com foco em praticar lógica de programação, animações e conceitos básicos de física aplicados a jogos. 
+
+E por último, desenvolvi uma aplicação de aluguel de carros utilizando uma arquitetura totalmente cloud native no Azure, com foco em comunicação assíncrona e processamento orientado a eventos.
 
 ## Tecnologias utilizadas:
 
@@ -18,6 +20,9 @@ Foi desenvolvido tambem um projeto criado com apoio do Copilot no VS Code, com f
 - Streamlit
 - Azure SQL Database 
 - Azure Blob Storage
+- Azure Logic Apps
+- Azure Cosmos DB
+- .NET (C#)
 - PyODBC
 - Dotenv
 - Azure API Management
@@ -28,16 +33,29 @@ Foi desenvolvido tambem um projeto criado com apoio do Copilot no VS Code, com f
 - JavaScript
 - HTML5 Canvas
 - Postman
+- JSON
 
 ## Funcionamento:
 
 1. O usuário cadastra um produto via interface Streamlit.
-2. A imagem é enviada para o Azure Blob Storage.
+2. A imagem do produto é enviada para o Azure Blob Storage.
 3. As informações do produto são armazenadas no Azure SQL Database.
-4. Os produtos são exibidos dinamicamente na interface. 
-5. É possível excluir produtos diretamente da aplicação.
-6. O serviço autenticador de boletos permite que o usuário envie um código de barras ou solicite um token via API.
-7. A validação do boleto é feita pela Azure Function e caso seja válida, a mensagem é enviada para a fila do Azure Service Bus.
+4. Os produtos são exibidos dinamicamente na interface, com opção de exclusão.
+
+5. A aplicação conta com uma camada de gerenciamento de APIs utilizando Azure API Management, protegida com autenticação JWT.
+6. O cliente solicita um token JWT para acessar os endpoints protegidos.
+7. O Azure API Management valida o token antes de encaminhar a requisição para a aplicação.
+8. O serviço autenticador de boletos permite que o usuário envie um código de barras ou solicite um token via API.
+
+9. A validação do boleto é realizada por uma Azure Function.
+10. Caso o boleto seja válido, a mensagem é enviada para uma fila do Azure Service Bus para processamento assíncrono.
+11. No fluxo de pagamentos do sistema de aluguel de carros, uma requisição é enviada para a fila `payment-queue`.
+12. Uma Azure Function consome essa mensagem e processa o pagamento, atribuindo um status (Aprovado, Reprovado ou Em análise).
+
+13. Caso o pagamento seja aprovado, uma nova mensagem é enviada para a fila `notification-queue`.
+14. A Azure Logic App é acionada automaticamente ao receber a mensagem na fila de notificações.
+15. A mensagem é decodificada (Base64) e convertida para JSON estruturado.
+16. Um e-mail é enviado automaticamente com os dados do pagamento processado.
 
 ## Como executar:
 
@@ -72,6 +90,33 @@ Foi desenvolvido tambem um projeto criado com apoio do Copilot no VS Code, com f
    - Geração de token: POST /api/gerar-token
    - Validação de boleto: POST /api/validar-boleto
 
+## Fluxo de pagamentos (Car Rental Cloud-Native)
+
+1. Certifique-se de que os seguintes recursos estejam configurados na Azure:
+   - Azure Service Bus (filas: payment-queue e notification-queue)
+   - Azure Functions
+   - Azure Logic App
+   - Azure Cosmos DB
+2. Execute a Azure Function localmente:
+   - func start
+3. Envie uma requisição para a API de pagamento (ou publique uma mensagem na fila `payment-queue`)
+Exemplo de payload:
+   {
+   "nome": "Eduarda",
+   "email": "eduarda@email.com",
+   "modelo": "HB20",
+   "ano": 2024,
+   "tempoAluguel": 7
+   }
+4. A mensagem será processada automaticamente pela Azure Function.
+5. Caso o pagamento seja aprovado:
+   - A mensagem será enviada para a fila 'notification-queue'
+6. A Azure Logic App será acionada automaticamente:
+   - Realiza o tratamento da mensagem
+   - Converte o conteúdo (Base64 → JSON)
+   - Envia um e-mail com os dados do pagamento
+7. Verifique o recebimento do e-mail com os dados processados.
+   
 ## Aprendizados e Insights:
 
 Durante o processo do desenvolvimento deste projeto, foram executados conceitos como:
@@ -82,6 +127,13 @@ Durante o processo do desenvolvimento deste projeto, foram executados conceitos 
 - Estruturação de aplicações web com Streamlit.
 - Criação de serviços serverless para autenticação de boletos.
 - Geração e validação de tokens únicos para segurança de APIs.
+- Uso de filas para comunicação assíncrona entre serviços.
+- Processamento distribuído utilizando Azure Functions.
+- Orquestração de fluxos automatizados com Azure Logic Apps.
+- Manipulação e tratamento de mensagens em Base64.
+- Conversão e interpretação de payloads JSON dentro de fluxos serverless.
+- Implementação de integrações desacopladas entre sistemas.
+- Simulação de cenários reais de processamento de pagamentos.
 
 ## Print's da Aplicação: Armazenando Dados
 
@@ -145,3 +197,20 @@ Service Bus Queue:
 ## Demonstração do Jogo:
 
 ![Joguinho-ezgif com-optimize](https://github.com/user-attachments/assets/7be50ede-e06d-4a45-bb3e-d1175374468b)
+
+## Print's da Aplicação: Car Rental Cloud-Native
+
+SQL database:
+![alt text](image-5.png)
+
+Service Bus Queue:
+![alt text](7.png)
+
+Application Map:
+![alt text](8.png)
+
+Azure Cosmos:
+![alt text](image-6.png)
+
+E-mail recebido:
+![alt text](13.png)
