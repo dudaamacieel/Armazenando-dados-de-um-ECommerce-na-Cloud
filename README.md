@@ -204,13 +204,13 @@ SQL database:
 ![alt text](image-5.png)
 
 Service Bus Queue:
-![alt text](7.png)
-
-Application Map:
-![alt text](8.png)
-
-Azure Cosmos:
 ![alt text](image-6.png)
 
+Application Map:
+![alt text](image-7.png)
+
+Azure Cosmos:
+![alt text](image-8.png)
+
 E-mail recebido:
-![alt text](13.png)
+![alt text](image-9.png)
