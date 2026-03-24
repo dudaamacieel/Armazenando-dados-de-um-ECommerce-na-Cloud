@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "ServiceBusConnection": "Endpoint=sb://sb-dev-eastus-pmaciel001.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=f/m3akj9FyFVBcHRVvETUPupcaR7F+rGE+ASbLK1J50=",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=821582aa-782d-4966-876c-3b880d9df918;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=09c50738-bd5d-4d32-aaab-7328dc2d330a",
+    "serviceBusQueue": "payment-queue"
+  },
+  "ConnectionStrings": {
+    "SqlConnectionString": "Server=tcp:srv-pmaciel-sql-dev-westus.database.windows.net,1433;Initial Catalog=db-sql-dev-pmaciel-eastus;Persist Security Info=False;User ID=BBF1F5F1-22F6-4153-ACA7-5342352C801D;Password=Bl@ckmirr0r215;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
+}

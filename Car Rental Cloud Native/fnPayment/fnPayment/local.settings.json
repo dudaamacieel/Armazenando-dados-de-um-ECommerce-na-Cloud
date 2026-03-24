@@ -1,0 +1,12 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "ServiceBusConnection": "Endpoint=sb://sb-dev-eastus-pmaciel001.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=f/m3akj9FyFVBcHRVvETUPupcaR7F+rGE+ASbLK1J50=",
+    "CosmosDb": "paymentcontainer",
+    "CosmosContainer": "payments",
+    "CosmosDBConnection": "AccountEndpoint=https://cdb-pmaciel-dev-eastus2.documents.azure.com:443/;AccountKey=a3a4mkTo8bllZPb8nNfIr3kyBjMn8hkVSL7FyORfqEPWCM3wICeps9ufQfsedxW4FtDEk8DUV06yACDbdDNJjA==;",
+    "NotificationQueue": "notification-queue"
+  }
+}
